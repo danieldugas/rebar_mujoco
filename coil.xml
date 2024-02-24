@@ -4,8 +4,25 @@
    </extension>
 
    <worldbody>
-      <composite prefix="actuated" type="cable" curve="cos(s) sin(s) s" count="41 1 1"
-               size="0.25 .1 4" offset="0.25 0 .05" initial="none">
+     <composite prefix="actuated" type="cable"
+       vertex="
+       0 0 0
+       1 0 0
+       1 1 0
+       0 1 0
+       "
+               offset="0.25 0 .05" initial="free">
+         <plugin plugin="mujoco.elasticity.cable">
+            <!--Units are in Pa (SI)-->
+            <config key="twist" value="5e8"/>
+            <config key="bend" value="15e8"/>
+            <config key="vmax" value="0"/>
+         </plugin>
+         <joint kind="main" damping="0.15" armature="0.01"/>
+         <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+      </composite>
+      <composite prefix="actuated2" type="cable" curve="cos(s) sin(s) s" count="41 1 1"
+               size="0.25 .1 4" offset="0.5 0 .05" initial="none">
          <plugin plugin="mujoco.elasticity.cable">
             <!--Units are in Pa (SI)-->
             <config key="twist" value="5e8"/>
