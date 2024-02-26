@@ -1,0 +1,212 @@
+<mujoco model="coil">
+   <extension>
+      <plugin plugin="mujoco.elasticity.cable"/>
+   </extension>
+
+   <worldbody>
+     <composite prefix="actuated" type="cable"
+       vertex="
+       0 0 0
+       1 0 0
+       1 1 0
+       0 1 0
+       "
+               offset="0 0 .05" initial="free">
+         <plugin plugin="mujoco.elasticity.cable">
+            <!--Units are in Pa (SI)-->
+            <config key="twist" value="5e8"/>
+            <config key="bend" value="15e8"/>
+            <config key="vmax" value="0"/>
+         </plugin>
+         <joint kind="main" damping="0.15" armature="0.01"/>
+         <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+      </composite>
+     <composite prefix="actuated1" type="cable"
+       vertex="
+       0 0 0
+       1 0 0
+       1 1 0
+       0 1 0
+       "
+               offset="0 0 .06" initial="free">
+         <plugin plugin="mujoco.elasticity.cable">
+            <!--Units are in Pa (SI)-->
+            <config key="twist" value="5e8"/>
+            <config key="bend" value="15e8"/>
+            <config key="vmax" value="0"/>
+         </plugin>
+         <joint kind="main" damping="0.15" armature="0.01"/>
+         <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+      </composite>
+     <composite prefix="actuated2" type="cable"
+       vertex="
+       0 0 0
+       1 0 0
+       1 1 0
+       0 1 0
+       "
+               offset="0 0 .07" initial="free">
+         <plugin plugin="mujoco.elasticity.cable">
+            <!--Units are in Pa (SI)-->
+            <config key="twist" value="5e8"/>
+            <config key="bend" value="15e8"/>
+            <config key="vmax" value="0"/>
+         </plugin>
+         <joint kind="main" damping="0.15" armature="0.01"/>
+         <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+      </composite>
+     <composite prefix="actuated3" type="cable"
+       vertex="
+       0 0 0
+       1 0 0
+       1 1 0
+       0 1 0
+       "
+               offset="0 0 .08" initial="free">
+         <plugin plugin="mujoco.elasticity.cable">
+            <!--Units are in Pa (SI)-->
+            <config key="twist" value="5e8"/>
+            <config key="bend" value="15e8"/>
+            <config key="vmax" value="0"/>
+         </plugin>
+         <joint kind="main" damping="0.15" armature="0.01"/>
+         <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+      </composite>
+     <composite prefix="actuated4" type="cable"
+       vertex="
+       0 0 0
+       1 0 0
+       1 1 0
+       0 1 0
+       "
+               offset="0 0 .09" initial="free">
+         <plugin plugin="mujoco.elasticity.cable">
+            <!--Units are in Pa (SI)-->
+            <config key="twist" value="5e8"/>
+            <config key="bend" value="15e8"/>
+            <config key="vmax" value="0"/>
+         </plugin>
+         <joint kind="main" damping="0.15" armature="0.01"/>
+         <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+      </composite>
+       <composite prefix="actuated5" type="cable"
+          vertex="
+          0 0 0
+          1 0 0
+          1 1 0
+          0 1 0
+          "
+                offset="0 0 .1" initial="free">
+          <plugin plugin="mujoco.elasticity.cable">
+               <!--Units are in Pa (SI)-->
+               <config key="twist" value="5e8"/>
+               <config key="bend" value="15e8"/>
+               <config key="vmax" value="0"/>
+          </plugin>
+          <joint kind="main" damping="0.15" armature="0.01"/>
+          <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+         </composite>
+         <composite prefix="actuated6" type="cable"
+            vertex="
+            0 0 0
+            1 0 0
+            1 1 0
+            0 1 0
+            "
+                  offset="0 0 .11" initial="free">
+            <plugin plugin="mujoco.elasticity.cable">
+                  <!--Units are in Pa (SI)-->
+                  <config key="twist" value="5e8"/>
+                  <config key="bend" value="15e8"/>
+                  <config key="vmax" value="0"/>
+            </plugin>
+            <joint kind="main" damping="0.15" armature="0.01"/>
+            <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+             </composite>
+               <composite prefix="actuated7" type="cable"
+                  vertex="
+                  0 0 0
+                  1 0 0
+                  1 1 0
+                  0 1 0
+                  "
+                        offset="0 0 .12" initial="free">
+                  <plugin plugin="mujoco.elasticity.cable">
+                        <!--Units are in Pa (SI)-->
+                        <config key="twist" value="5e8"/>
+                        <config key="bend" value="15e8"/>
+                        <config key="vmax" value="0"/>
+                  </plugin>
+                  <joint kind="main" damping="0.15" armature="0.01"/>
+                  <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+                  </composite>
+                  <composite prefix="actuated8" type="cable"
+                     vertex="
+                     0 0 0
+                     1 0 0
+                     1 1 0
+                     0 1 0
+                     "
+                           offset="0 0 .13" initial="free">
+                     <plugin plugin="mujoco.elasticity.cable">
+                           <!--Units are in Pa (SI)-->
+                           <config key="twist" value="5e8"/>
+                           <config key="bend" value="15e8"/>
+                           <config key="vmax" value="0"/>
+                     </plugin>
+                     <joint kind="main" damping="0.15" armature="0.01"/>
+                     <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+                        </composite>
+                        <composite prefix="actuated9" type="cable"
+                           vertex="
+                           0 0 0
+                           1 0 0
+                           1 1 0
+                           0 1 0
+                           "
+                                 offset="0 0 .14" initial="free">
+                           <plugin plugin="mujoco.elasticity.cable">
+                                 <!--Units are in Pa (SI)-->
+                                 <config key="twist" value="5e8"/>
+                                 <config key="bend" value="15e8"/>
+                                 <config key="vmax" value="0"/>
+                           </plugin>
+                           <joint kind="main" damping="0.15" armature="0.01"/>
+                           <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+                              </composite>
+                              <composite prefix="actuated10" type="cable"
+                                 vertex="
+                                 0 0 0
+                                 1 0 0
+                                 1 1 0
+                                 0 1 0
+                                 "
+                                       offset="0 0 .15" initial="free">
+                                 <plugin plugin="mujoco.elasticity.cable">
+                                       <!--Units are in Pa (SI)-->
+                                       <config key="twist" value="5e8"/>
+                                       <config key="bend" value="15e8"/>
+                                       <config key="vmax" value="0"/>
+                                 </plugin>
+                                 <joint kind="main" damping="0.15" armature="0.01"/>
+                                 <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+                                    </composite>
+                                    <composite prefix="actuated11" type="cable"
+                                       vertex="
+                                       0 0 0
+                                       1 0 0
+                                       1 1 0
+                                       0 1 0
+                                       "
+                                             offset="0 0 .16" initial="free">
+                                       <plugin plugin="mujoco.elasticity.cable">
+                                             <!--Units are in Pa (SI)-->
+                                             <config key="twist" value="5e8"/>
+                                             <config key="bend" value="15e8"/>
+                                             <config key="vmax" value="0"/>
+                                       </plugin>
+                                       <joint kind="main" damping="0.15" armature="0.01"/>
+                                       <geom type="capsule" size=".005" rgba=".8 .2 .1 1"/>
+                                          </composite>
+   </worldbody>
+</mujoco>

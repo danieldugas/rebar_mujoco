@@ -1,6 +1,6 @@
 <mujoco model="h1 scene">
-<!--   <include file="h1.xml"/> -->
-   <include file="rebar_stack.xml"/>
+  <include file="h1.xml"/>
+   <include file="simple_stack.xml"/>
 
   <statistic center="0 0 0" extent="1.8"/>
 
